@@ -1,4 +1,4 @@
 # ProyectoLeguajes
 
 Librerio direcciones 
-pip install -i https://test.pypi.org/simple/ direcciones==0.0.1
+pip install -i https://test.pypi.org/simple/ direcciones==0.0.2
