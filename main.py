@@ -5,6 +5,7 @@
 
 import re
 import string
+from sys import stdin
 
 from unicodedata import normalize
 
@@ -146,7 +147,6 @@ def estadoRural2(direccion, pos):
 
 
 def estadoInicioRural(direccion, pos):
-    print('rural')
     if direccion.startswith('kilometro') or direccion.startswith('kilom') or direccion.startswith('km'):
         existeNomKM(direccion, pos)
     else:
@@ -746,7 +746,11 @@ def tipoDireccion(direccion):
 
 
 if __name__ == '__main__':
-    #ejemplos = stdin.read().split('\n')
-    # for i in ejemplos:
-        #print(tipoDireccion(i)
-    print(tipoDireccion('CL 14 # 11 - 73'))
+    archivo = open("PruebasDir.txt")
+    for i in archivo:
+        print(i)
+        print(tipoDireccion(i))
+
+    print(tipoDireccion('Carrera 12 No. 19-00 Local 18 Centro Comercial Altavista , Locales comerciales Santo Domingo, Bogotá D.C - Cundinamarca'))
+    print(tipoDireccion('Corregimiento el recuerdo salon comunal principal '))
+    #corregimiento salon comunal lote
