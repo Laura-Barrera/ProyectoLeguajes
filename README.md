@@ -1,4 +1,4 @@
 # ProyectoLeguajes
 
-Librerio direcciones 
-pip install -i https://test.pypi.org/simple/ direcciones==0.0.3
+Libreria direcciones 
+pip install -i https://test.pypi.org/simple/ VerficarDireccion
